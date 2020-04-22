@@ -1,0 +1,87 @@
+/* Here I Style The Body Of The Page To Look More Appealing */
+body {
+    background-color: #333;
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Here I Am Selecting My Container Div By The Class I Gave It And Styled It To Be More Appealing */
+.container {
+    background-color: #006699;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Here I Am Selecting The Form By Its Class Name And Styled It To Be More Appealing */
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Here I Am Selecting The H1 Tag By Its Class Name And Styled It To Be More Appealing */
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+/* Here I Am Selecting All Label Tags And Styling Them To Be More Appealing */
+label {
+    font-weight: bold;
+}
+
+/* Here I Am Selecting The Number of Characters Range And Number Inputs Through Their Class Name And Styling Them To Be More Appealing */
+.character-amount-container {
+display: flex;
+align-items: center;
+}
+
+/* Here I Am Selecting The Number Input By Its Class Name And Styling It To Be More Appealing */
+.number-input {
+  width: 2rem;
+}
+
+/* Here I Am Selecting What The Password Display By Selecting It Through Its Class Name And Styling It To Be More Appealing */
+.password-display {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333;
+    height: 2 rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem;
+}
+
+/* Here I Am Selecting The Generate Password Button By Its Class Name And Styling It To Be More Appealing */
+.btn {
+  grid-column: span 2;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem; 
+}
+
+/* Here I Am Adding A Hover Functionality To The Generate Password Option To Make It More Appealing */
+.btn:hover {
+   background-color: #FFFFFF33; 
+}

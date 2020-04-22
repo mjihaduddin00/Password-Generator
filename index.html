@@ -1,0 +1,43 @@
+<!-- To Begin Developing The Password Generator, I Simply Used The ! + Enter Command To Develop The Base For This HTML Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Here I Have Linked The JavaScript Page and CSS Page As Well As Included A Title And Added The Defer Command To The Script.js Tag For It To Load After The Body Of My HTML-->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+<!-- Here I Have Created A Div Container -->
+
+    <div class="container">
+        <h1 class="title">Password Generator</h1>
+        <h3 class="password-display" id="passwordDisplay">password</h3>
+
+        <!-- Here I Have Inserted A Form Tag That Will Assist In Storing And Creating The Password With A Variety Of Options Such As A Number Of Characters Range, To Include Uppercase Or Not, Numbers, And Symbols As Well As A Generate Button For The Password -->
+        <form id="passwordGeneratorForm" class="form">
+            <label for="characterAmountNumber">Number of Characters</label>
+
+<!-- Here I Have Created A Seperate Div To Have The Character Range And Number To Be On The Same Column -->
+            <div class="character-amount-container">
+                <input type="range" min="1" max="50" value="10" id="characterAmountRange">
+                <input class="number-input" type="number" min="1" max="50" value="10" id="characterAmountNumber">
+            </div>    
+
+            <label for="includeUppercase">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase">
+
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
+
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols">
+
+            <button class="btn" type="submit">Generate Password</button>
+        </form>
+    </div>
+</body>
+</html>
